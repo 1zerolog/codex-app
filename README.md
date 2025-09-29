@@ -1,18 +1,39 @@
-# Codex App 🚀
+# Codex Mini Oyun Uygulaması
 
-Bu depo, Codex dâhilinde test edilebilecek basit bir Python uygulaması içerir.
+Bu depo, cüzdan adresi doğrulamasıyla korunan basit bir Lucky Number mini oyununu içerir. Kullanıcılar geçerli bir Ethereum benzeri cüzdan adresiyle giriş yaptıktan sonra oyunu oynayabilir ve oturum istatistiklerini görüntüleyebilir.
 
 ## Özellikler
-- `main.py`: Cüzdan adresiyle giriş yapılabilen ve "Lucky Number" mini oyununu sunan basit konsol uygulaması.
-- `requirements.txt`: Bağımlılık dosyası (standart kütüphane yeterli olduğundan boş bırakılmıştır).
+- Komut satırı tabanlı giriş ve oyun menüleri
+- 0x ile başlayan 42 karakterlik cüzdan adresi doğrulaması
+- Kazanılan/kaybedilen oyun istatistikleri ve kazanma oranı takibi
+- Modüler yapı: `mini_app/` paketi altında oturum, cüzdan ve oyun bileşenleri
 
-## Kullanım
+## Gereksinimler
+- Python 3.11+
+
+Ekstra bağımlılık yoktur; standart kütüphane yeterlidir.
+
+## Kurulum ve Çalıştırma
+1. Depoyu klonlayın veya dosyaları yerel bilgisayarınıza alın.
+2. Python ortamınızı etkinleştirin (varsa sanal ortam kullanın).
+3. Uygulamayı şu komutla başlatın:
+
+   ```bash
+   python main.py
+   ```
+
+4. Açılan menüden cüzdan adresinizi girerek giriş yapın ve oyunu oynayın.
+
+## Yapı
+- `main.py`: Uygulama giriş noktası.
+- `mini_app/session.py`: Cüzdan oturumu durumu ve istatistikleri.
+- `mini_app/wallet.py`: Cüzdan doğrulama ve giriş yardımcıları.
+- `mini_app/game.py`: Lucky Number mini oyunu.
+- `mini_app/ui.py`: Komut satırı menüleri ve akış kontrolü.
+
+## Test
+Kodun sözdizimi olarak geçerli olduğunu kontrol etmek için:
+
 ```bash
-python main.py
+python -m compileall .
 ```
-
-1. Uygulama açıldığında "Cüzdan ile giriş yap" seçeneğini kullanarak sahte bir cüzdan adresi (ör. `0x` ile başlayan 42 karakterlik hex dizisi) girin.
-2. Giriş yaptıktan sonra "Lucky Number" oyununu oynayabilir, istatistiklerinizi görüntüleyebilir veya oturumdan çıkabilirsiniz.
-
-## Katkıda Bulunma
-Pull request’ler kabul edilir. Büyük değişiklikler için önce tartışma açınız.
