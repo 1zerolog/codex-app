@@ -54,6 +54,7 @@ This repo favors:
 | Path | Purpose |
 | --- | --- |
 | `skills/example-repo-cartographer/` | A skill that helps map a repository before editing it. |
+| `skills/repo-knowledge-graph/` | A deeper codebase mapping skill for modules, dependencies, and data flow. |
 | `plugins/example-codex-note/` | A minimal plugin scaffold with a bundled note-capture skill. |
 
 ## Conventions
