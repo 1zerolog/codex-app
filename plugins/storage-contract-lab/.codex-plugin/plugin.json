@@ -1,0 +1,9 @@
+{
+  "name": "storage-contract-lab",
+  "version": "0.1.0",
+  "description": "Storage Contract Lab helps Codex with reviewing persistence contracts and storage lifecycle.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/storage-contract"
+  ]
+}
