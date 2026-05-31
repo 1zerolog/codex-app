@@ -1,0 +1,9 @@
+{
+  "name": "browser-qa-studio",
+  "version": "0.1.0",
+  "description": "Browser QA Studio helps Codex with running browser-oriented QA for local web apps and prototypes.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/browser-qa"
+  ]
+}
