@@ -5,54 +5,90 @@ description: Use when a UI, landing page, design prototype, or frontend change n
 
 # Prototype Review
 
-Use this skill to review a frontend or visual prototype with the eye of a product engineer. It is inspired by popular design-skill ecosystems, but this version focuses on practical Codex checks for real repositories.
+## Purpose
+
+Use this skill when a UI, landing page, design prototype, or frontend change needs product-quality review before delivery. It turns the request into a repeatable workflow with clear checks, outputs, and validation.
+
+## When To Use
+
+- The user request matches this skill's description.
+- The work has enough risk that a checklist is useful.
+- The repository already has files, tests, or conventions that should guide the answer.
+- A concise plan or review artifact would make the next step clearer.
+
+## When Not To Use
+
+- The task is a one-line factual answer with no repository impact.
+- The user explicitly asks for a quick command only.
+- A narrower skill fits better and would avoid unnecessary process.
+- The required information is unavailable and cannot be discovered locally or from trusted sources.
+
+## Inputs To Gather
+
+- User goal and expected deliverable.
+- Relevant files, commands, logs, or links.
+- Existing repository conventions and instruction files.
+- Risk constraints such as security, data loss, compatibility, or release timing.
+
+## Signals To Inspect
+
+- Layout.
+- States.
+- Responsiveness.
+- Visual hierarchy.
+
+## Preferred Commands
+
+```bash
+rg "dev|start|preview" package.json
+rg "className|style|css|tailwind" src app pages
+```
 
 ## Workflow
 
-1. Identify the product surface:
-   - app screen
-   - landing page
-   - dashboard
-   - component library
-   - generated prototype
-2. Find the render path:
-   - package manager
-   - dev server command
-   - build command
-   - preview URL
-3. Inspect the UI across at least two viewport sizes when possible.
-4. Check for:
-   - layout overflow
-   - clipped or overlapping text
-   - missing loading and empty states
-   - inaccessible controls
-   - unclear hierarchy
-   - inconsistent spacing, radius, and color use
-   - broken image or asset references
-5. Suggest or implement focused fixes.
-6. Verify the result with a screenshot or build output when the environment supports it.
+1. Restate the target outcome in one sentence.
+2. Inspect the smallest relevant part of the repository first.
+3. Identify the current behavior, contract, or state before suggesting changes.
+4. Find the most important risk or uncertainty.
+5. Propose or implement the smallest useful action.
+6. Validate with the most relevant local command, test, or manual check.
+7. Summarize what changed, what was verified, and what remains.
 
-## Review Checklist
+## Checklist
 
-- Primary workflow is visible without reading explanatory copy.
-- Buttons and controls use familiar affordances.
-- Text fits containers on mobile and desktop.
-- States exist for loading, empty, error, and success paths.
-- Colors are not dominated by one narrow hue family unless the brand requires it.
-- Repeated items use consistent dimensions.
-- The design matches the domain: operational tools stay dense and calm; creative surfaces can be more expressive.
+- Scope is clear and not broader than the user asked for.
+- Existing project conventions were checked before inventing new structure.
+- Risks are named directly.
+- Validation is specific, not hand-wavy.
+- Output is short enough to be useful but detailed enough to act on.
 
-## Output
+## Output Format
 
-Return:
+```markdown
+## Prototype Review Result
 
-- what was reviewed
-- what changed or should change
-- verification performed
-- remaining risks
+Goal:
 
-## Safety Notes
+Findings:
 
-- Do not invent a marketing page when the user asked for a usable app.
-- Do not add decorative complexity that hides the actual product state.
-- Do not claim visual verification unless a build, screenshot, or browser check actually ran.
+Recommended action:
+
+Validation:
+
+Risks or follow-up:
+```
+
+## Quality Bar
+
+The result should be practical enough that another engineer can continue from it without rereading the whole repository. Prefer concrete file paths, commands, examples, and decision points over generic advice.
+
+## Common Pitfalls
+
+- Starting with a broad refactor before understanding the local pattern.
+- Treating generated files, caches, or vendored dependencies as source of truth.
+- Reporting every observation instead of the few that change the decision.
+- Claiming validation happened when no command or concrete check was run.
+
+## Deliverable
+
+Produce a product-quality UI review.
