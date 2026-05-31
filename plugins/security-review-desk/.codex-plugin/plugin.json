@@ -1,0 +1,9 @@
+{
+  "name": "security-review-desk",
+  "version": "0.1.0",
+  "description": "Security Review Desk helps Codex with reviewing inputs, auth, permissions, and data exposure.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/security-review"
+  ]
+}
