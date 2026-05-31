@@ -1,0 +1,9 @@
+{
+  "name": "incident-command-post",
+  "version": "0.1.0",
+  "description": "Incident Command Post helps Codex with structuring incident analysis, mitigation, and follow-up.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/incident-command"
+  ]
+}
