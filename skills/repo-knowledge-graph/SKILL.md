@@ -5,55 +5,90 @@ description: Use when a codebase needs to be mapped into modules, data flow, dep
 
 # Repo Knowledge Graph
 
-Use this skill to turn a repository into a practical mental graph before making changes. It is inspired by popular agent-skill projects that convert codebases into queryable knowledge maps, but this version stays dependency-light and Codex-native.
+## Purpose
 
-## Workflow
+Use this skill when a codebase needs to be mapped into modules, data flow, dependencies, and ownership boundaries before planning or editing. It turns the request into a repeatable workflow with clear checks, outputs, and validation.
 
-1. Read repository instructions first: `AGENTS.md`, `README.md`, `CONTRIBUTING.md`, and package manifests.
-2. List files with `rg --files`, excluding build outputs, caches, dependencies, and generated artifacts.
-3. Identify nodes:
-   - packages
-   - applications
-   - entry points
-   - shared libraries
-   - tests
-   - configuration
-   - external integrations
-4. Identify edges:
-   - imports and package dependencies
-   - API calls
-   - CLI entry points
-   - data files read or written
-   - environment variables
-   - test coverage relationships
-5. Produce a compact map before editing.
+## When To Use
 
-## Suggested Commands
+- The user request matches this skill's description.
+- The work has enough risk that a checklist is useful.
+- The repository already has files, tests, or conventions that should guide the answer.
+- A concise plan or review artifact would make the next step clearer.
+
+## When Not To Use
+
+- The task is a one-line factual answer with no repository impact.
+- The user explicitly asks for a quick command only.
+- A narrower skill fits better and would avoid unnecessary process.
+- The required information is unavailable and cannot be discovered locally or from trusted sources.
+
+## Inputs To Gather
+
+- User goal and expected deliverable.
+- Relevant files, commands, logs, or links.
+- Existing repository conventions and instruction files.
+- Risk constraints such as security, data loss, compatibility, or release timing.
+
+## Signals To Inspect
+
+- Nodes.
+- Edges.
+- Entry points.
+- Data flow.
+
+## Preferred Commands
 
 ```bash
 rg --files
-find . -maxdepth 3 -type f
-rg "from |import |require\\(|process\\.env|os\\.environ|fetch\\(|axios|requests\\."
-rg "def |class |function |export |module\\.exports"
+rg "from |import |require\(|process\.env|os\.environ"
 ```
+
+## Workflow
+
+1. Restate the target outcome in one sentence.
+2. Inspect the smallest relevant part of the repository first.
+3. Identify the current behavior, contract, or state before suggesting changes.
+4. Find the most important risk or uncertainty.
+5. Propose or implement the smallest useful action.
+6. Validate with the most relevant local command, test, or manual check.
+7. Summarize what changed, what was verified, and what remains.
+
+## Checklist
+
+- Scope is clear and not broader than the user asked for.
+- Existing project conventions were checked before inventing new structure.
+- Risks are named directly.
+- Validation is specific, not hand-wavy.
+- Output is short enough to be useful but detailed enough to act on.
 
 ## Output Format
 
 ```markdown
-## Repository Map
+## Repo Knowledge Graph Result
 
-- Purpose:
-- Entry points:
-- Core modules:
-- Data flow:
-- External systems:
-- Tests:
-- Risk areas:
-- Best edit targets:
+Goal:
+
+Findings:
+
+Recommended action:
+
+Validation:
+
+Risks or follow-up:
 ```
 
-## Safety Notes
+## Quality Bar
 
-- Do not index secrets or private data into summaries.
-- Treat generated files as implementation output, not source of truth.
-- If the repository is large, map the area relevant to the user's request first.
+The result should be practical enough that another engineer can continue from it without rereading the whole repository. Prefer concrete file paths, commands, examples, and decision points over generic advice.
+
+## Common Pitfalls
+
+- Starting with a broad refactor before understanding the local pattern.
+- Treating generated files, caches, or vendored dependencies as source of truth.
+- Reporting every observation instead of the few that change the decision.
+- Claiming validation happened when no command or concrete check was run.
+
+## Deliverable
+
+Produce a repository graph summary.
