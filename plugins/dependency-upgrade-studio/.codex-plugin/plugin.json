@@ -1,0 +1,9 @@
+{
+  "name": "dependency-upgrade-studio",
+  "version": "0.1.0",
+  "description": "Dependency Upgrade Studio helps Codex with upgrading dependencies with scoped risk and verification.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/dependency-upgrade"
+  ]
+}
