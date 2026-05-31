@@ -1,0 +1,9 @@
+{
+  "name": "secret-sentinel",
+  "version": "0.1.0",
+  "description": "Secret Sentinel helps Codex with scanning diffs and repos for sensitive files and secrets.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/secret"
+  ]
+}
