@@ -1,0 +1,9 @@
+{
+  "name": "third-party-api-lab",
+  "version": "0.1.0",
+  "description": "Third Party API Lab helps Codex with designing wrappers around external APIs.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/third-party-api"
+  ]
+}
