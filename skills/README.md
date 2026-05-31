@@ -24,4 +24,5 @@ Then edit the frontmatter and workflow instructions.
 | Skill | Purpose |
 | --- | --- |
 | `example-repo-cartographer` | Minimal example for mapping a repository before editing. |
+| `prototype-review` | Review frontend prototypes for product-quality layout, states, and UX. |
 | `repo-knowledge-graph` | Map modules, data flow, dependencies, and ownership boundaries. |
