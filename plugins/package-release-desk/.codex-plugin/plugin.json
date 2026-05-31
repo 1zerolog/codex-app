@@ -1,0 +1,9 @@
+{
+  "name": "package-release-desk",
+  "version": "0.1.0",
+  "description": "Package Release Desk helps Codex with checking package metadata and publish readiness.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/package-release"
+  ]
+}
