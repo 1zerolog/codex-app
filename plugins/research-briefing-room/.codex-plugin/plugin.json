@@ -1,0 +1,9 @@
+{
+  "name": "research-briefing-room",
+  "version": "0.1.0",
+  "description": "Research Briefing Room helps Codex with producing sourced research briefs with uncertainty.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/research-briefing"
+  ]
+}
