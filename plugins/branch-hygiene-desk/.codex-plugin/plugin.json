@@ -1,0 +1,9 @@
+{
+  "name": "branch-hygiene-desk",
+  "version": "0.1.0",
+  "description": "Branch Hygiene Desk helps Codex with keeping branches, remotes, and working trees clean.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/branch-hygiene"
+  ]
+}
