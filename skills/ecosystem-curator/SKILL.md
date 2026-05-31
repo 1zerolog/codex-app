@@ -5,53 +5,90 @@ description: Use when updating Codex Labkit from public Codex skill, plugin, MCP
 
 # Ecosystem Curator
 
-Use this skill to scan public Codex-related repositories and turn useful patterns into original Labkit entries.
+## Purpose
+
+Use this skill when updating Codex Labkit from public Codex skill, plugin, MCP, or agent ecosystem sources. It turns the request into a repeatable workflow with clear checks, outputs, and validation.
+
+## When To Use
+
+- The user request matches this skill's description.
+- The work has enough risk that a checklist is useful.
+- The repository already has files, tests, or conventions that should guide the answer.
+- A concise plan or review artifact would make the next step clearer.
+
+## When Not To Use
+
+- The task is a one-line factual answer with no repository impact.
+- The user explicitly asks for a quick command only.
+- A narrower skill fits better and would avoid unnecessary process.
+- The required information is unavailable and cannot be discovered locally or from trusted sources.
+
+## Inputs To Gather
+
+- User goal and expected deliverable.
+- Relevant files, commands, logs, or links.
+- Existing repository conventions and instruction files.
+- Risk constraints such as security, data loss, compatibility, or release timing.
+
+## Signals To Inspect
+
+- Source popularity.
+- License.
+- Category fit.
+- Original adaptation.
+
+## Preferred Commands
+
+```bash
+rg "source|license|plugin|skill" docs README.md
+python3 scripts/validate_repo.py
+```
 
 ## Workflow
 
-1. Search public sources:
-   - official Codex skill catalogs
-   - awesome lists
-   - popular skill libraries
-   - plugin marketplaces
-   - MCP integration examples
-2. Record source links and metadata:
-   - repository
-   - license
-   - popularity signal
-   - relevant category
-3. Choose one candidate at a time.
-4. Decide whether it should become:
-   - a standalone skill
-   - a plugin
-   - a template
-   - a documentation note
-5. Write original Codex Labkit instructions.
-6. Validate the repository.
-7. Commit that single addition before moving to the next candidate.
+1. Restate the target outcome in one sentence.
+2. Inspect the smallest relevant part of the repository first.
+3. Identify the current behavior, contract, or state before suggesting changes.
+4. Find the most important risk or uncertainty.
+5. Propose or implement the smallest useful action.
+6. Validate with the most relevant local command, test, or manual check.
+7. Summarize what changed, what was verified, and what remains.
 
-## Adaptation Checklist
+## Checklist
 
-- The entry has a clear trigger.
-- The workflow is Codex-native.
-- The source is linked when it influenced the category.
-- No upstream files are copied wholesale.
-- The entry is small enough to maintain.
-- The validation script passes.
+- Scope is clear and not broader than the user asked for.
+- Existing project conventions were checked before inventing new structure.
+- Risks are named directly.
+- Validation is specific, not hand-wavy.
+- Output is short enough to be useful but detailed enough to act on.
 
-## Commit Pattern
+## Output Format
 
-Use one commit per adapted item:
+```markdown
+## Ecosystem Curator Result
 
-```text
-Add <name> skill
-Add <name> plugin
-Document <name> source pattern
+Goal:
+
+Findings:
+
+Recommended action:
+
+Validation:
+
+Risks or follow-up:
 ```
 
-## Safety Notes
+## Quality Bar
 
-- Check licenses before copying any text or code.
-- Prefer original summaries and workflows.
-- Do not import large third-party dependencies without a strong reason.
-- Do not add tools that require secrets unless the setup path is documented.
+The result should be practical enough that another engineer can continue from it without rereading the whole repository. Prefer concrete file paths, commands, examples, and decision points over generic advice.
+
+## Common Pitfalls
+
+- Starting with a broad refactor before understanding the local pattern.
+- Treating generated files, caches, or vendored dependencies as source of truth.
+- Reporting every observation instead of the few that change the decision.
+- Claiming validation happened when no command or concrete check was run.
+
+## Deliverable
+
+Produce one adapted ecosystem item per commit.
