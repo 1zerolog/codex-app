@@ -1,0 +1,9 @@
+{
+  "name": "regression-test-lab",
+  "version": "0.1.0",
+  "description": "Regression Test Lab helps Codex with designing regression tests for bugs and risky changes.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/regression-test"
+  ]
+}
