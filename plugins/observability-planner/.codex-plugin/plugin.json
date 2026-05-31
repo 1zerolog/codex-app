@@ -1,0 +1,9 @@
+{
+  "name": "observability-planner",
+  "version": "0.1.0",
+  "description": "Observability Planner helps Codex with planning logs, metrics, traces, and alerts for a change.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/observability-planner"
+  ]
+}
