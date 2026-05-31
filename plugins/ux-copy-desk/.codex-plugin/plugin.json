@@ -1,0 +1,9 @@
+{
+  "name": "ux-copy-desk",
+  "version": "0.1.0",
+  "description": "UX Copy Desk helps Codex with improving UI labels, errors, and empty states.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/ux-copy"
+  ]
+}
