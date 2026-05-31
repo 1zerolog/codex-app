@@ -1,0 +1,9 @@
+{
+  "name": "log-analysis-lab",
+  "version": "0.1.0",
+  "description": "Log Analysis Lab helps Codex with turning noisy logs into a timeline and likely causes.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/log-analysis"
+  ]
+}
