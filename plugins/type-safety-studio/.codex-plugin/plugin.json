@@ -1,0 +1,9 @@
+{
+  "name": "type-safety-studio",
+  "version": "0.1.0",
+  "description": "Type Safety Studio helps Codex with improving type safety at important boundaries.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/type-safety"
+  ]
+}
