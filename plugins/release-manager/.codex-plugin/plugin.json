@@ -1,0 +1,9 @@
+{
+  "name": "release-manager",
+  "version": "0.1.0",
+  "description": "Release Manager helps Codex with coordinating release readiness, notes, and rollback.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/release-manager"
+  ]
+}
