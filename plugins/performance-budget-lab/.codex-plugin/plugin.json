@@ -1,0 +1,9 @@
+{
+  "name": "performance-budget-lab",
+  "version": "0.1.0",
+  "description": "Performance Budget Lab helps Codex with reviewing performance budgets and obvious bottlenecks.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/performance-budget"
+  ]
+}
