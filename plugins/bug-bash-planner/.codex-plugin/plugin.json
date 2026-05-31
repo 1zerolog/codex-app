@@ -1,0 +1,9 @@
+{
+  "name": "bug-bash-planner",
+  "version": "0.1.0",
+  "description": "Bug Bash Planner helps Codex with planning focused bug bash sessions and verification passes.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/bug-bash-planner"
+  ]
+}
