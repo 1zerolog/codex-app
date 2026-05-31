@@ -1,0 +1,20 @@
+name: Plugin request
+description: Suggest a new Codex plugin for this labkit.
+title: "[Plugin]: "
+labels:
+  - plugin
+body:
+  - type: textarea
+    id: purpose
+    attributes:
+      label: Purpose
+      description: What should this plugin provide?
+    validations:
+      required: true
+  - type: textarea
+    id: contents
+    attributes:
+      label: Expected contents
+      description: Skills, scripts, MCP servers, docs, or other assets.
+    validations:
+      required: false

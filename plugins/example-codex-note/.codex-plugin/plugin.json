@@ -1,0 +1,9 @@
+{
+  "name": "example-codex-note",
+  "version": "0.1.0",
+  "description": "A minimal Codex plugin example with one bundled note-capture skill.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/note-capture"
+  ]
+}

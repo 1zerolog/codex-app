@@ -1,0 +1,11 @@
+[project]
+name = "codex-labkit"
+version = "0.1.0"
+description = "A lab repository for Codex skills, plugins, and authoring templates."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "1zerolog" }]
+
+[tool.codex-labkit]
+validate = "python3 scripts/validate_repo.py"

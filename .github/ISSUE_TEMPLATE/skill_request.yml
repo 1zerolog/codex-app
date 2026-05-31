@@ -1,0 +1,20 @@
+name: Skill request
+description: Suggest a new Codex skill for this labkit.
+title: "[Skill]: "
+labels:
+  - skill
+body:
+  - type: textarea
+    id: use-case
+    attributes:
+      label: Use case
+      description: What should this skill help Codex do?
+    validations:
+      required: true
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Suggested workflow
+      description: List the steps the skill should follow.
+    validations:
+      required: false
