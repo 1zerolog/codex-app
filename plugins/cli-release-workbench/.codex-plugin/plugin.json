@@ -1,0 +1,9 @@
+{
+  "name": "cli-release-workbench",
+  "version": "0.1.0",
+  "description": "CLI Release Workbench helps Codex with preparing CLI tools for release and smoke testing.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/cli-release"
+  ]
+}
