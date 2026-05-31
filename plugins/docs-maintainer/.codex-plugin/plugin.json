@@ -1,0 +1,9 @@
+{
+  "name": "docs-maintainer",
+  "version": "0.1.0",
+  "description": "Docs Maintainer helps Codex with keeping documentation aligned with current code and behavior.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/docs-maintainer"
+  ]
+}
