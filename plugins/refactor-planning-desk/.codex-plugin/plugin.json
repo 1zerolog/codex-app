@@ -1,0 +1,9 @@
+{
+  "name": "refactor-planning-desk",
+  "version": "0.1.0",
+  "description": "Refactor Planning Desk helps Codex with planning refactors without mixing behavior changes.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/refactor-planning"
+  ]
+}
