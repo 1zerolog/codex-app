@@ -1,0 +1,9 @@
+{
+  "name": "local-dev-medic",
+  "version": "0.1.0",
+  "description": "Local Dev Medic helps Codex with fixing local development setup and first-run failures.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/local-dev-medic"
+  ]
+}
