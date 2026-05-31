@@ -1,0 +1,9 @@
+{
+  "name": "terminal-output-clinic",
+  "version": "0.1.0",
+  "description": "Terminal Output Clinic helps Codex with summarizing command output into errors and next actions.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/terminal-output-clinic"
+  ]
+}
