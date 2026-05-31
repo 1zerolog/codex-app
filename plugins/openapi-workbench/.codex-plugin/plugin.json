@@ -1,0 +1,9 @@
+{
+  "name": "openapi-workbench",
+  "version": "0.1.0",
+  "description": "OpenAPI Workbench helps Codex with reviewing OpenAPI specs and generated-client readiness.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/openapi"
+  ]
+}
