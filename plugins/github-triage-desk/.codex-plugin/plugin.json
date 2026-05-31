@@ -1,0 +1,9 @@
+{
+  "name": "github-triage-desk",
+  "version": "0.1.0",
+  "description": "GitHub Triage Desk helps Codex with triaging issues, PRs, checks, labels, and review state.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/github-triage"
+  ]
+}
