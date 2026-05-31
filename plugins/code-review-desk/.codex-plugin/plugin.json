@@ -1,0 +1,9 @@
+{
+  "name": "code-review-desk",
+  "version": "0.1.0",
+  "description": "Code Review Desk helps Codex with reviewing changes for bugs, regressions, and missing tests.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/code-review"
+  ]
+}
