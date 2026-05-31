@@ -1,0 +1,9 @@
+{
+  "name": "repo-cartography-studio",
+  "version": "0.1.0",
+  "description": "Repo Cartography Studio helps Codex with mapping repository structure before complex work.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/repo-cartography"
+  ]
+}
