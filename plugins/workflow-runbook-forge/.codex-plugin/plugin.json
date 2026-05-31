@@ -1,0 +1,9 @@
+{
+  "name": "workflow-runbook-forge",
+  "version": "0.1.0",
+  "description": "Workflow Runbook Forge helps Codex with turning repeated operations into runbooks.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/workflow-runbook"
+  ]
+}
