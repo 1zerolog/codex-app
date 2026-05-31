@@ -1,0 +1,9 @@
+{
+  "name": "frontend-polish-lab",
+  "version": "0.1.0",
+  "description": "Frontend Polish Lab helps Codex with improving frontend layout, state coverage, and product feel.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/frontend-polish"
+  ]
+}
