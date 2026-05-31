@@ -5,12 +5,90 @@ description: Use when a web app needs a quick browser verification after fronten
 
 # Browser Smoke Test
 
-Verify that the main user path renders and responds.
+## Purpose
+
+Use this skill when a web app needs a quick browser verification after frontend changes. It turns the request into a repeatable workflow with clear checks, outputs, and validation.
+
+## When To Use
+
+- The user request matches this skill's description.
+- The work has enough risk that a checklist is useful.
+- The repository already has files, tests, or conventions that should guide the answer.
+- A concise plan or review artifact would make the next step clearer.
+
+## When Not To Use
+
+- The task is a one-line factual answer with no repository impact.
+- The user explicitly asks for a quick command only.
+- A narrower skill fits better and would avoid unnecessary process.
+- The required information is unavailable and cannot be discovered locally or from trusted sources.
+
+## Inputs To Gather
+
+- User goal and expected deliverable.
+- Relevant files, commands, logs, or links.
+- Existing repository conventions and instruction files.
+- Risk constraints such as security, data loss, compatibility, or release timing.
+
+## Signals To Inspect
+
+- Page renders.
+- Primary action works.
+- Console is clean.
+- Responsive layout survives.
+
+## Preferred Commands
+
+```bash
+rg "dev|start|preview" package.json pyproject.toml
+rg "localhost|PORT|vite|next|webpack"
+```
 
 ## Workflow
 
-1. Start or locate the dev server.
-2. Open the target page.
-3. Test the primary interaction.
-4. Capture errors, screenshots, or console logs when relevant.
+1. Restate the target outcome in one sentence.
+2. Inspect the smallest relevant part of the repository first.
+3. Identify the current behavior, contract, or state before suggesting changes.
+4. Find the most important risk or uncertainty.
+5. Propose or implement the smallest useful action.
+6. Validate with the most relevant local command, test, or manual check.
+7. Summarize what changed, what was verified, and what remains.
 
+## Checklist
+
+- Scope is clear and not broader than the user asked for.
+- Existing project conventions were checked before inventing new structure.
+- Risks are named directly.
+- Validation is specific, not hand-wavy.
+- Output is short enough to be useful but detailed enough to act on.
+
+## Output Format
+
+```markdown
+## Browser Smoke Test Result
+
+Goal:
+
+Findings:
+
+Recommended action:
+
+Validation:
+
+Risks or follow-up:
+```
+
+## Quality Bar
+
+The result should be practical enough that another engineer can continue from it without rereading the whole repository. Prefer concrete file paths, commands, examples, and decision points over generic advice.
+
+## Common Pitfalls
+
+- Starting with a broad refactor before understanding the local pattern.
+- Treating generated files, caches, or vendored dependencies as source of truth.
+- Reporting every observation instead of the few that change the decision.
+- Claiming validation happened when no command or concrete check was run.
+
+## Deliverable
+
+Produce a browser smoke-test report with any visible defects.
