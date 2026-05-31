@@ -1,0 +1,9 @@
+{
+  "name": "backend-service-doctor",
+  "version": "0.1.0",
+  "description": "Backend Service Doctor helps Codex with diagnosing backend service behavior, failures, and boundaries.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/backend-service-doctor"
+  ]
+}
