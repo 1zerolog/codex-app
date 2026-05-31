@@ -55,6 +55,7 @@ This repo favors:
 | --- | --- |
 | `skills/example-repo-cartographer/` | A skill that helps map a repository before editing it. |
 | `skills/prototype-review/` | A product-quality review workflow for UI and frontend prototypes. |
+| `skills/research-brief/` | A sourced research workflow for literature scans and technical briefs. |
 | `skills/repo-knowledge-graph/` | A deeper codebase mapping skill for modules, dependencies, and data flow. |
 | `plugins/example-codex-note/` | A minimal plugin scaffold with a bundled note-capture skill. |
 
