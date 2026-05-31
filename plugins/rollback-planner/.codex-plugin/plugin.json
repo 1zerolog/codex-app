@@ -1,0 +1,9 @@
+{
+  "name": "rollback-planner",
+  "version": "0.1.0",
+  "description": "Rollback Planner helps Codex with planning rollback for risky releases, migrations, and config changes.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/rollback-planner"
+  ]
+}
