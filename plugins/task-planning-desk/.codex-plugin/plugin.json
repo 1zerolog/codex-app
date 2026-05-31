@@ -1,0 +1,9 @@
+{
+  "name": "task-planning-desk",
+  "version": "0.1.0",
+  "description": "Task Planning Desk helps Codex with breaking broad requests into executable engineering tasks.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/task-planning"
+  ]
+}
