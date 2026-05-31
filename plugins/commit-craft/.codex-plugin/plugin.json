@@ -1,0 +1,9 @@
+{
+  "name": "commit-craft",
+  "version": "0.1.0",
+  "description": "Commit Craft helps Codex with grouping repository changes into clean reviewable commits.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/commit-craft"
+  ]
+}
