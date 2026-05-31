@@ -1,0 +1,9 @@
+{
+  "name": "small-pr-studio",
+  "version": "0.1.0",
+  "description": "Small PR Studio helps Codex with splitting large work into reviewable PR slices.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/small-pr"
+  ]
+}
