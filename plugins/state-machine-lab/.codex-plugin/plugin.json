@@ -1,0 +1,9 @@
+{
+  "name": "state-machine-lab",
+  "version": "0.1.0",
+  "description": "State Machine Lab helps Codex with mapping states, transitions, and invalid paths.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/state-machine"
+  ]
+}
