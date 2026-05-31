@@ -1,0 +1,9 @@
+{
+  "name": "ci-failure-lab",
+  "version": "0.1.0",
+  "description": "CI Failure Lab helps Codex with triaging CI failures and isolating the first actionable error.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/ci-failure"
+  ]
+}
