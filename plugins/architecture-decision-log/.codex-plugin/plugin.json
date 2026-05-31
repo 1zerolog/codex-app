@@ -1,0 +1,9 @@
+{
+  "name": "architecture-decision-log",
+  "version": "0.1.0",
+  "description": "Architecture Decision Log helps Codex with capturing important technical decisions as ADR-style notes.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/architecture-decision-log"
+  ]
+}
