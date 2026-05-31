@@ -1,0 +1,9 @@
+{
+  "name": "test-fixture-factory",
+  "version": "0.1.0",
+  "description": "Test Fixture Factory helps Codex with designing reusable fixtures for tests and local reproduction.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/test-fixture-factory"
+  ]
+}
