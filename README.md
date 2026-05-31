@@ -60,6 +60,7 @@ This repo favors:
 | `skills/repo-knowledge-graph/` | A deeper codebase mapping skill for modules, dependencies, and data flow. |
 | `plugins/agent-workbench/` | A lightweight plugin for specialist role planning and handoffs. |
 | `plugins/example-codex-note/` | A minimal plugin scaffold with a bundled note-capture skill. |
+| `plugins/mcp-integration-planner/` | A plugin for planning MCP-style tool integrations safely. |
 
 ## Conventions
 

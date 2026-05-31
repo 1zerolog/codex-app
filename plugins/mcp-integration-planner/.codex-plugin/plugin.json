@@ -1,0 +1,9 @@
+{
+  "name": "mcp-integration-planner",
+  "version": "0.1.0",
+  "description": "A Codex plugin for planning MCP-style tool integrations before implementation.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/mcp-integration-plan"
+  ]
+}

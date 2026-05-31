@@ -27,3 +27,4 @@ Then update `.codex-plugin/plugin.json` and the plugin README.
 | --- | --- |
 | `agent-workbench` | Plan specialist roles and handoffs for complex Codex work. |
 | `example-codex-note` | Minimal plugin scaffold with one bundled note skill. |
+| `mcp-integration-planner` | Plan MCP-style tool integrations, schemas, permissions, and validation. |
