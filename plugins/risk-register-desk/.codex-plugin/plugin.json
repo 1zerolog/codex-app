@@ -1,0 +1,9 @@
+{
+  "name": "risk-register-desk",
+  "version": "0.1.0",
+  "description": "Risk Register Desk helps Codex with creating risk registers for projects and changes.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/risk-register"
+  ]
+}
