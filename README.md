@@ -53,6 +53,7 @@ This repo favors:
 
 | Path | Purpose |
 | --- | --- |
+| `skills/ecosystem-curator/` | A workflow for adapting public Codex ecosystem ideas one commit at a time. |
 | `skills/example-repo-cartographer/` | A skill that helps map a repository before editing it. |
 | `skills/prototype-review/` | A product-quality review workflow for UI and frontend prototypes. |
 | `skills/research-brief/` | A sourced research workflow for literature scans and technical briefs. |

@@ -23,6 +23,7 @@ Then edit the frontmatter and workflow instructions.
 
 | Skill | Purpose |
 | --- | --- |
+| `ecosystem-curator` | Scan public Codex ecosystem sources and adapt one item per commit. |
 | `example-repo-cartographer` | Minimal example for mapping a repository before editing. |
 | `prototype-review` | Review frontend prototypes for product-quality layout, states, and UX. |
 | `research-brief` | Produce sourced research briefs with uncertainty and citation discipline. |
