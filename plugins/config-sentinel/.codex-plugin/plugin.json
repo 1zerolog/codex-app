@@ -1,0 +1,9 @@
+{
+  "name": "config-sentinel",
+  "version": "0.1.0",
+  "description": "Config Sentinel helps Codex with auditing configuration files, defaults, and environment variables.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/config"
+  ]
+}
