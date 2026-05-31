@@ -1,0 +1,9 @@
+{
+  "name": "cache-invalidation-lab",
+  "version": "0.1.0",
+  "description": "Cache Invalidation Lab helps Codex with reviewing cache keys, invalidation, and stale data risks.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/cache-invalidation"
+  ]
+}
