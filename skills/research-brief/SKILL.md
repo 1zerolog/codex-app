@@ -5,55 +5,89 @@ description: Use when the user needs a sourced research brief, literature scan, 
 
 # Research Brief
 
-Use this skill to create a concise, sourced research brief. It is inspired by popular scientific agent-skill libraries, but this version is intentionally general, citation-first, and careful about uncertainty.
+## Purpose
+
+Use this skill when the user needs a sourced research brief, literature scan, or technical topic summary with clear uncertainty and citations. It turns the request into a repeatable workflow with clear checks, outputs, and validation.
+
+## When To Use
+
+- The user request matches this skill's description.
+- The work has enough risk that a checklist is useful.
+- The repository already has files, tests, or conventions that should guide the answer.
+- A concise plan or review artifact would make the next step clearer.
+
+## When Not To Use
+
+- The task is a one-line factual answer with no repository impact.
+- The user explicitly asks for a quick command only.
+- A narrower skill fits better and would avoid unnecessary process.
+- The required information is unavailable and cannot be discovered locally or from trusted sources.
+
+## Inputs To Gather
+
+- User goal and expected deliverable.
+- Relevant files, commands, logs, or links.
+- Existing repository conventions and instruction files.
+- Risk constraints such as security, data loss, compatibility, or release timing.
+
+## Signals To Inspect
+
+- Research question.
+- Primary sources.
+- Uncertainty.
+- Citations.
+
+## Preferred Commands
+
+```bash
+rg "citation|source|paper|standard|docs" docs README.md
+```
 
 ## Workflow
 
-1. Restate the research question in one sentence.
-2. Identify the domain and risk level:
-   - software or engineering
-   - scientific or academic
-   - medical, legal, or financial
-   - product or market
-3. Prefer primary sources:
-   - official documentation
-   - standards
-   - papers
-   - repository docs
-   - regulatory pages
-4. Collect 3 to 7 strong sources.
-5. Separate facts from interpretation.
-6. Produce a brief with citations and dated context.
+1. Restate the target outcome in one sentence.
+2. Inspect the smallest relevant part of the repository first.
+3. Identify the current behavior, contract, or state before suggesting changes.
+4. Find the most important risk or uncertainty.
+5. Propose or implement the smallest useful action.
+6. Validate with the most relevant local command, test, or manual check.
+7. Summarize what changed, what was verified, and what remains.
+
+## Checklist
+
+- Scope is clear and not broader than the user asked for.
+- Existing project conventions were checked before inventing new structure.
+- Risks are named directly.
+- Validation is specific, not hand-wavy.
+- Output is short enough to be useful but detailed enough to act on.
 
 ## Output Format
 
 ```markdown
-## Research Brief
+## Research Brief Result
 
-Question:
+Goal:
 
-Key takeaways:
+Findings:
 
-Evidence:
+Recommended action:
 
-Uncertainty:
+Validation:
 
-Recommended next step:
+Risks or follow-up:
 ```
 
-## Source Rules
+## Quality Bar
 
-- Use current sources when the topic may have changed.
-- Prefer primary sources over blog summaries.
-- Link every source used.
-- Note when a claim is an inference.
-- Avoid quoting long copyrighted passages.
+The result should be practical enough that another engineer can continue from it without rereading the whole repository. Prefer concrete file paths, commands, examples, and decision points over generic advice.
 
-## High-Stakes Topics
+## Common Pitfalls
 
-For medical, legal, financial, safety, or regulatory topics:
+- Starting with a broad refactor before understanding the local pattern.
+- Treating generated files, caches, or vendored dependencies as source of truth.
+- Reporting every observation instead of the few that change the decision.
+- Claiming validation happened when no command or concrete check was run.
 
-- verify current information
-- avoid overconfident advice
-- include jurisdiction or date when relevant
-- recommend expert review when decisions have real-world consequences
+## Deliverable
+
+Produce a cited research brief.
