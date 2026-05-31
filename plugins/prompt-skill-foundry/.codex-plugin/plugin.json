@@ -1,0 +1,9 @@
+{
+  "name": "prompt-skill-foundry",
+  "version": "0.1.0",
+  "description": "Prompt Skill Foundry helps Codex with turning repeated prompts into reusable Codex skills.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/prompt-skill-foundry"
+  ]
+}
