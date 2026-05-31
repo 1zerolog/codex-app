@@ -1,0 +1,9 @@
+{
+  "name": "sql-review-bench",
+  "version": "0.1.0",
+  "description": "SQL Review Bench helps Codex with reviewing SQL correctness, performance, and safety.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/sql-review"
+  ]
+}
