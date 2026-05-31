@@ -1,0 +1,9 @@
+{
+  "name": "monorepo-control-room",
+  "version": "0.1.0",
+  "description": "Monorepo Control Room helps Codex with navigating monorepos, package graphs, and affected tests.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/monorepo-control"
+  ]
+}
