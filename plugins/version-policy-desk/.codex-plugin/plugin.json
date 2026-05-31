@@ -1,0 +1,9 @@
+{
+  "name": "version-policy-desk",
+  "version": "0.1.0",
+  "description": "Version Policy Desk helps Codex with defining versioning, deprecation, and compatibility rules.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/version-policy"
+  ]
+}
