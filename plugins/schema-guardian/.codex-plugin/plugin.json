@@ -1,0 +1,9 @@
+{
+  "name": "schema-guardian",
+  "version": "0.1.0",
+  "description": "Schema Guardian helps Codex with reviewing schemas and compatibility boundaries.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/schema"
+  ]
+}
