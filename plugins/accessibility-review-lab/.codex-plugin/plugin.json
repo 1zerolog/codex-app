@@ -1,0 +1,9 @@
+{
+  "name": "accessibility-review-lab",
+  "version": "0.1.0",
+  "description": "Accessibility Review Lab helps Codex with reviewing keyboard flow, labels, semantics, and contrast.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/accessibility-review"
+  ]
+}
