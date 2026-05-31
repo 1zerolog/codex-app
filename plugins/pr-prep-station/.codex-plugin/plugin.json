@@ -1,0 +1,9 @@
+{
+  "name": "pr-prep-station",
+  "version": "0.1.0",
+  "description": "PR Prep Station helps Codex with preparing branch changes for a clean pull request.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/pr-prep"
+  ]
+}
