@@ -57,6 +57,7 @@ This repo favors:
 | `skills/prototype-review/` | A product-quality review workflow for UI and frontend prototypes. |
 | `skills/research-brief/` | A sourced research workflow for literature scans and technical briefs. |
 | `skills/repo-knowledge-graph/` | A deeper codebase mapping skill for modules, dependencies, and data flow. |
+| `plugins/agent-workbench/` | A lightweight plugin for specialist role planning and handoffs. |
 | `plugins/example-codex-note/` | A minimal plugin scaffold with a bundled note-capture skill. |
 
 ## Conventions

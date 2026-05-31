@@ -20,3 +20,10 @@ cp -R templates/plugin/. plugins/my-plugin/
 ```
 
 Then update `.codex-plugin/plugin.json` and the plugin README.
+
+## Included Plugins
+
+| Plugin | Purpose |
+| --- | --- |
+| `agent-workbench` | Plan specialist roles and handoffs for complex Codex work. |
+| `example-codex-note` | Minimal plugin scaffold with one bundled note skill. |

@@ -1,0 +1,9 @@
+{
+  "name": "agent-workbench",
+  "version": "0.1.0",
+  "description": "A small Codex plugin for planning specialist roles, skills, and handoffs before complex work.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/agent-roster"
+  ]
+}
