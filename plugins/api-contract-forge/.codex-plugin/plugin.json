@@ -1,0 +1,9 @@
+{
+  "name": "api-contract-forge",
+  "version": "0.1.0",
+  "description": "API Contract Forge helps Codex with reviewing and shaping API contracts before implementation.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/api-contract"
+  ]
+}
