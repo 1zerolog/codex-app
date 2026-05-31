@@ -1,0 +1,9 @@
+{
+  "name": "data-migration-forge",
+  "version": "0.1.0",
+  "description": "Data Migration Forge helps Codex with planning data and schema migrations safely.",
+  "author": "1zerolog",
+  "skills": [
+    "skills/data-migration"
+  ]
+}
